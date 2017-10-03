@@ -1,0 +1,15 @@
+---------- Date: 2017-02-27 23:46:57 ~ IP : 46.63.7.120 ----------
+REQUEST URI : /admin/index.php?route=catalog/information/edit&token=TVbTudoy8sF5VxboKINtilwBUmGwI9EY&information_id=12
+MOD DETAILS:
+   modFile   : /sata1/home/users/gorshki/www/www.gorshki.com.ua/vqmod/xml/exchange1c.xml
+   id        : exchange1c
+   version   : 1.1
+   vqmver    : 
+   author    : zenwalker (http://zenwalker.ru/)
+
+File Name    : admin/model/catalog/*.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $this->event->trigger
+
+----------------------------------------------------------------------
+
+

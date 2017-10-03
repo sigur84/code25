@@ -1,0 +1,61 @@
+/*
+ *
+ * @category  : OpenCart
+ * @module    : Smart One Page Checkout
+ * @author    : OCdevWizard <ocdevwizard@gmail.com>
+ * @copyright : Copyright (c) 2015, OCdevWizard
+ * @license   : http://license.ocdevwizard.com/Licensing_Policy.pdf
+ *
+*/
+
+@media print {
+	body {
+		-webkit-print-color-adjust: exact;
+	}
+	nav#top,
+	header,
+	nav#menu,
+	#text-success,
+	#column_left,
+	#column_right,
+	footer,
+	.buttons, 
+	.breadcrumb,
+	h3,
+	.row.product-layout {
+		display: none !important;
+	}
+	table.list thead td {
+			background-color: #EFEFEF;
+	}
+	a {
+		text-decoration: none;
+		color: #000 !important;
+	}
+	table.smopc_list {
+		border-collapse: collapse;
+		width: 100%;
+		border-top: 1px solid #DDDDDD;
+		border-left: 1px solid #DDDDDD;
+		margin-bottom: 20px;
+	}
+	table.smopc_list td {
+		border-right: 1px solid #DDDDDD;
+		border-bottom: 1px solid #DDDDDD;
+	}
+	table.smopc_list thead td {
+		background-color: #EFEFEF;
+		padding: 0px 5px;
+	}
+	table.smopc_list thead td a,
+	table.smopc_list thead td {
+		text-decoration: none;
+		color: #222222;
+		font-weight: bold;
+	}
+	table.smopc_list tbody td,
+	table.smopc_list tfoot td {
+		padding: 10px !important;
+	}
+}
+

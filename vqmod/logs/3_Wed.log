@@ -1,0 +1,28 @@
+---------- Date: 2017-03-29 23:50:26 ~ IP : 37.229.111.244 ----------
+REQUEST URI : /admin/index.php?route=extension/modification/refresh&token=PssTxlqDI7eTU1jLAYirOthnkMrvpbVw
+MOD DETAILS:
+   modFile   : /sata1/home/users/gorshki/www/www.gorshki.com.ua/vqmod/xml/cookie_low.xml
+   id        : EU Cookie Law - top, bottom, floating
+   version   : 
+   vqmver    : 2.X
+   author    : arveo
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/language/hungarian/setting/setting.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2017-03-29 23:51:57 ~ IP : 37.229.111.244 ----------
+REQUEST URI : /index.php?route=product/product&product_id=62
+MOD DETAILS:
+   modFile   : /sata1/home/users/gorshki/www/www.gorshki.com.ua/vqmod/xml/cookie_low.xml
+   id        : EU Cookie Law - top, bottom, floating
+   version   : 
+   vqmver    : 2.X
+   author    : arveo
+VQModObject::parseMods - Could not resolve path for [catalog/language/hungarian/common/footer.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [admin/language/hungarian/setting/setting.php] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

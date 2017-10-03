@@ -1,0 +1,37 @@
+---------- Date: 2017-07-27 21:29:50 ~ IP : 109.162.2.215 ----------
+REQUEST URI : /index.php?route=product/product&path=3&product_id=88
+MOD DETAILS:
+   modFile   : /sata1/home/users/gorshki/www/www.gorshki.com.ua/vqmod/xml/product_series_template_default.xml
+   id        : Product Series - template - default
+   version   : 1.6
+   vqmver    : 2.1.6
+   author    : WeDoWeb.com.au | contact@wedoweb.com.au
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <?php if ($options) { ?>
+----------------------------------------------------------------------
+
+
+---------- Date: 2017-07-27 21:46:21 ~ IP : 109.162.2.215 ----------
+REQUEST URI : /index.php?route=product/product&path=3&product_id=88
+MOD DETAILS:
+   modFile   : /sata1/home/users/gorshki/www/www.gorshki.com.ua/vqmod/xml/product_option_image_pro.xml
+   id        : Product Option Image PRO / Изображения опций PRO
+   version   : 2.1.4
+   vqmver    : 2.5.X
+   author    : Support: support@liveopencart.com / Поддержка: help@liveopencart.ru
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(6)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): ~<\?php echo \$footer; \?>|<\?php echo \$footer;\?>|</body>~
+MOD DETAILS:
+   modFile   : /sata1/home/users/gorshki/www/www.gorshki.com.ua/vqmod/xml/product_series_template_default.xml
+   id        : Product Series - template - default
+   version   : 1.6
+   vqmver    : 2.1.6
+   author    : WeDoWeb.com.au | contact@wedoweb.com.au
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (SKIPPED): <?php if ($options) { ?>
+----------------------------------------------------------------------
+
+

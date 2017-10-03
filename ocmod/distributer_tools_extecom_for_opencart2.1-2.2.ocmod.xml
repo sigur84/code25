@@ -1,0 +1,111 @@
+<modification>
+    <name><![CDATA[<font color="#0000"><b>Distributer_Tools_OCext for OC 2.1</font>]]></name>
+    <code>Distributer_Tools_OCext</code>
+    <version><![CDATA[<b>1.1</b>]]></version>
+    <author><![CDATA[OCEXT]]></author>
+    <link>www.ocext.com</link>   	             
+<file path="admin/controller/catalog/product.php">
+    <operation>
+        <search><![CDATA[protected function getForm() {]]></search>
+        <add position="after"><![CDATA[			
+                /*
+                * OCext
+                */
+                
+                $this->language->load('module/distributer_tools_extecom');
+                $data['tab_assortiment'] = $this->language->get('tab_assortiment');
+                $this->language->load('catalog/product');
+				
+                /*
+                * End OCext
+                */
+]]></add>	
+    </operation>
+    <operation>
+        <search><![CDATA[$data['footer'] = $this->load->controller('common/footer');]]></search>
+        <add position="after"><![CDATA[			
+                /*
+                * OCext
+                */
+                $data['assortiment_info'] = $this->load->controller('module/distributer_tools_extecom/getassortimentinfo');
+                /*
+                * End OCext
+                */
+]]></add>	
+    </operation>
+</file>
+<file path="admin/model/catalog/product.php">
+    <operation>
+        <search><![CDATA[if ($data['keyword']) {]]></search>
+        <add position="before"><![CDATA[			
+		 /*
+		 * OCext
+		 */
+		 
+		 if(isset($data)){
+			 
+			 $this->load->model('tool/distributer_tools_extecom');
+			 
+			 $this->model_tool_distributer_tools_extecom->editAssortiment($data,$product_id);
+			 
+		 }
+		 
+		 /*
+		 * End OCext
+		 */
+]]></add>	
+    </operation>
+</file>
+<file path="admin/view/template/catalog/product_form.tpl">
+    <operation>
+        <search><![CDATA[<li><a href="#tab-design" data-toggle="tab"><?php echo $tab_design; ?></a></li>]]></search>
+        <add position="after"><![CDATA[			
+                 <!-- OCext -->
+            <li><a href="#tab-assortiment" data-toggle="tab"><?php echo $tab_assortiment; ?></a></li>
+
+]]></add>
+    </operation>
+    <operation>
+        <search><![CDATA[<div class="tab-pane" id="tab-data">]]></search>
+        <add position="before"><![CDATA[
+            
+              <!-- OCext -->        
+               <div class="tab-pane" id="tab-assortiment">
+                      <?php echo $assortiment_info; ?>    
+               </div>
+
+]]></add>		
+    </operation>
+</file>  
+    <file path="catalog/controller/product/product.php">
+        <operation>
+            <search><![CDATA[public function index() {]]></search>
+            <add position="after"><![CDATA[
+			
+                //Distributer_Tools_OCext - assortiment
+              
+              $this->document->addScript('catalog/view/javascript/ocext/distributertools.js');
+              $this->document->addScript('catalog/view/javascript/ocext/distributertools.css');              
+              if (isset($this->request->get['product_id'])) {
+                 $data['product_id_distributer'] = (int)$this->request->get['product_id'];
+		} else {
+			 $data['product_id_distributer'] = '';
+		}
+                $data['addDistributerScript'] = $this->load->controller('product/distributer_tools_extecom/addDistributerScript');
+                //end Distributer_Tools_OCext - assortiment
+
+]]></add>	
+        </operation>
+    </file>	
+    <file path="catalog/view/theme/*/template/product/product.tpl">
+        <operation>
+            <search><![CDATA[<?php echo $header; ?>]]></search>
+            <add position="after"><![CDATA[			
+                <!-- Distributer_Tools_OCext - assortiment  -->            
+                 <?php echo $addDistributerScript; ?>
+              <!-- end Distributer_Tools_OCext - assortiment -->
+
+]]></add>	
+        </operation>
+    </file>	              			
+</modification>
